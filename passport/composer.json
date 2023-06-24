@@ -2,6 +2,7 @@
     "require": {
         "alibabacloud/dysmsapi-20170525": "^2.0",
       "ext-mysqli": "*",
-      "ext-json": "*"
+      "ext-json": "*",
+        "phpmailer/phpmailer": "^6.7"
     }
 }

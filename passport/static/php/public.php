@@ -2,9 +2,8 @@
 require './php/Account.php';
 require './php/Utils.php';
 require './php/Mailer.php';
-require './libs/mail/SMTP.php';
-require './libs/mail/Exception.php';
-require './libs/mail/PHPMailer.php';
+
+require_once "../../vendor/autoload.php";
 
 error_reporting(0);
 header('Access-Control-Allow-Credentials: true');
