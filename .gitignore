@@ -6,13 +6,10 @@ composer.phar
 composer.lock
 
 .vscode/
-.idea
-.DS_Store
+.idea/
+.DS_Store/
 
 cache/
 *.cache
 runtime/
 .php_cs.cache
-
-push.cmd
-push.sh
