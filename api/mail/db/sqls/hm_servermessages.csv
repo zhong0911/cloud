@@ -1,0 +1,36 @@
+1,VIRUS_FOUND,Virus found
+2,VIRUS_ATTACHMENT_REMOVED,"Virus found:
+The attachment(s) of this message was removed since a virus was detected in at least one of them.
+
+"
+3,VIRUS_NOTIFICATION,"The message below contained a virus and did not
+reach some or all of the intended recipients.
+
+   From: %MACRO_FROM%
+   To: %MACRO_TO%
+   Sent: %MACRO_SENT%
+   Subject: %MACRO_SUBJECT%
+
+hMailServer
+"
+4,SEND_FAILED_NOTIFICATION,"Your message did not reach some or all of the intended recipients.
+
+   Sent: %MACRO_SENT%
+   Subject: %MACRO_SUBJECT%
+
+The following recipient(s) could not be reached:
+
+%MACRO_RECIPIENTS%
+
+hMailServer
+"
+5,MESSAGE_UNDELIVERABLE,Message undeliverable
+6,MESSAGE_FILE_MISSING,"The mail server could not deliver the message to you since the file %MACRO_FILE% does not exist on the server.
+
+The file may have been deleted by anti virus software running on the server.
+
+hMailServer"
+7,ATTACHMENT_REMOVED,"The attachment %MACRO_FILE% was blocked for delivery by the e-mail server. Please contact your system administrator if you have any questions regarding this.
+
+hMailServer
+"

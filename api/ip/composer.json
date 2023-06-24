@@ -1,0 +1,11 @@
+{
+    "require": {
+        "docker-php/docker-php": "^2.0",
+        "http-interop/http-factory-guzzle": "^1.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

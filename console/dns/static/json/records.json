@@ -1,0 +1,180 @@
+{
+  "success": true,
+  "domains": [
+
+    {
+      "remark": null,
+      "createTime": "2023-05-27T05:57Z",
+      "recordCount": 4,
+      "tags": {
+        "tag": null
+      },
+      "instanceId": null,
+      "domainName": "api.antx.cc",
+      "domainId": "caf292b0f5ad4af3b3777a3902202dfc",
+      "aliDomain": false,
+      "groupId": null,
+      "groupName": null,
+      "resourceGroupId": "rg-acfmxwbluewx72q",
+      "instanceEndTime": null,
+      "instanceExpired": null,
+      "versionName": "Alibaba Cloud DNS",
+      "dnsServers": {
+        "dnsServer": [
+          "ns1.alidns.com",
+          "ns2.alidns.com"
+        ]
+      },
+      "versionCode": "mianfei",
+      "punyCode": "api.antx.cc",
+      "registrantEmail": null,
+      "createTimestamp": 1685167068000,
+      "starmark": false
+    },
+    {
+      "remark": null,
+      "createTime": "2023-05-09T10:28Z",
+      "recordCount": 6,
+      "tags": {
+        "tag": null
+      },
+      "instanceId": null,
+      "domainName": "antxdns.top",
+      "domainId": "85b452c52fb242b395d76524be23ca8b",
+      "aliDomain": false,
+      "groupId": null,
+      "groupName": null,
+      "resourceGroupId": "rg-acfmxwbluewx72q",
+      "instanceEndTime": null,
+      "instanceExpired": null,
+      "versionName": "Alibaba Cloud DNS",
+      "dnsServers": {
+        "dnsServer": [
+          "ns1.alidns.com",
+          "ns2.alidns.com"
+        ]
+      },
+      "versionCode": "mianfei",
+      "punyCode": "antxdns.top",
+      "registrantEmail": null,
+      "createTimestamp": 1683628106000,
+      "starmark": false
+    },
+    {
+      "remark": null,
+      "createTime": "2023-05-07T11:29Z",
+      "recordCount": 6,
+      "tags": {
+        "tag": null
+      },
+      "instanceId": null,
+      "domainName": "antxcdn.top",
+      "domainId": "492cd8090a8d43d7807c92f4915c141e",
+      "aliDomain": false,
+      "groupId": null,
+      "groupName": null,
+      "resourceGroupId": "rg-acfmxwbluewx72q",
+      "instanceEndTime": null,
+      "instanceExpired": null,
+      "versionName": "Alibaba Cloud DNS",
+      "dnsServers": {
+        "dnsServer": [
+          "ns1.alidns.com",
+          "ns2.alidns.com"
+        ]
+      },
+      "versionCode": "mianfei",
+      "punyCode": "antxcdn.top",
+      "registrantEmail": null,
+      "createTimestamp": 1683458995000,
+      "starmark": false
+    },
+    {
+      "remark": null,
+      "createTime": "2023-05-07T09:56Z",
+      "recordCount": 2,
+      "tags": {
+        "tag": null
+      },
+      "instanceId": null,
+      "domainName": "zhongjiahao.xyz",
+      "domainId": "3f5efd21f0974c919b8bba1a2089521a",
+      "aliDomain": false,
+      "groupId": null,
+      "groupName": null,
+      "resourceGroupId": "rg-acfmxwbluewx72q",
+      "instanceEndTime": null,
+      "instanceExpired": null,
+      "versionName": "Alibaba Cloud DNS",
+      "dnsServers": {
+        "dnsServer": [
+          "ns1.alidns.com",
+          "ns2.alidns.com"
+        ]
+      },
+      "versionCode": "mianfei",
+      "punyCode": "zhongjiahao.xyz",
+      "registrantEmail": null,
+      "createTimestamp": 1683453398000,
+      "starmark": false
+    },
+    {
+      "remark": null,
+      "createTime": "2023-04-27T13:36Z",
+      "recordCount": 19,
+      "tags": {
+        "tag": null
+      },
+      "instanceId": null,
+      "domainName": "antx.cc",
+      "domainId": "3ec231ff87c64167951b2dbad14823ae",
+      "aliDomain": true,
+      "groupId": null,
+      "groupName": null,
+      "resourceGroupId": "rg-acfmxwbluewx72q",
+      "instanceEndTime": null,
+      "instanceExpired": null,
+      "versionName": "Alibaba Cloud DNS",
+      "dnsServers": {
+        "dnsServer": [
+          "dns21.hichina.com",
+          "dns22.hichina.com"
+        ]
+      },
+      "versionCode": "mianfei",
+      "punyCode": "antx.cc",
+      "registrantEmail": null,
+      "createTimestamp": 1682602600000,
+      "starmark": false
+    },
+    {
+      "remark": null,
+      "createTime": "2023-04-21T14:43Z",
+      "recordCount": 2,
+      "tags": {
+        "tag": null
+      },
+      "instanceId": null,
+      "domainName": "rwx.asia",
+      "domainId": "4c363cd47fd44b0eace7a2f32cde59a6",
+      "aliDomain": true,
+      "groupId": null,
+      "groupName": null,
+      "resourceGroupId": "rg-acfmxwbluewx72q",
+      "instanceEndTime": null,
+      "instanceExpired": null,
+      "versionName": "Alibaba Cloud DNS",
+      "dnsServers": {
+        "dnsServer": [
+          "dns9.hichina.com",
+          "dns10.hichina.com"
+        ]
+      },
+      "versionCode": "mianfei",
+      "punyCode": "rwx.asia",
+      "registrantEmail": null,
+      "createTimestamp": 1682088209000,
+      "starmark": false
+    }
+  ]
+}

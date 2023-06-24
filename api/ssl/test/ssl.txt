@@ -1,0 +1,93 @@
+以下是一个简单的生成CSR的PHP脚本：
+
+```
+<?php
+
+class CSRGenerator
+{
+    public static array $digest_algorithms = ["SHA1", "SHA224", "SHA256", "SHA384", "SHA512"];
+    public static array $private_key_types = ["RSA", "DSA", "DH", "EC"];
+
+    public static function generateCSR($params): array
+    {
+        $config = json_decode($params['config']) ?? '';
+        $digest_alg = $params['digest_alg'] ?? '';
+        $private_key_bits = $params['private_key_bits'] ?? '';
+        $private_key_type = $params['private_key_type'] ?? '';
+        $common_name = $params['common_name'] ?? '';
+        $country_name = $params['country_name'] ?? '';
+        $email_address = $params['email_address'] ?? '';
+        $locality_name = $params['locality_name'] ?? '';
+        $organization_name = $params['organization_name'] ?? '';
+        $state_or_province_name = $params['state_or_province_name'] ?? '';
+        $organizational_unit_name = $params['organizational_unit_name'] ?? '';
+
+        // 检查参数是否为空
+        if ($config == '') return ['success' => false, 'message' => 'Config cannot be empty'];
+        if ($digest_alg == '') return ['success' => false, 'message' => 'Digest algorithm cannot be empty'];
+        if ($private_key_bits == '') return ['success' => false, 'message' => 'Private key bits cannot be empty'];
+        if ($private_key_type == '') return ['success' => false, 'message' => 'Private key type cannot be empty'];
+        if ($country_name == '') return ['success' => false, 'message' => 'Country name cannot be empty'];
+        if ($state_or_province_name == '') return ['success' => false, 'message' => 'State or province name cannot be empty'];
+        if ($locality_name == '') return ['success' => false, 'message' => 'Locality name cannot be empty'];
+        if ($organization_name == '') return ['success' => false, 'message' => 'Organization name cannot be empty'];
+        if ($organizational_unit_name == '') return ['success' => false, 'message' => 'Organizational unit name cannot be empty'];
+        if ($common_name == '') return ['success' => false, 'message' => 'Common name cannot be empty'];
+
+        // 生成私钥
+        $private_key = openssl_pkey_new([
+            'private_key_bits' => $private_key_bits,
+            'private_key_type' => constant("OPENSSL_KEYTYPE_" . strtoupper($private_key_type))
+        ]);
+
+        // 生成CSR
+        $csr = openssl_csr_new([
+            "countryName" => $country_name,
+            "stateOrProvinceName" => $state_or_province_name,
+            "localityName" => $locality_name,
+            "organizationName" => $organization_name,
+            "organizationalUnitName" => $organizational_unit_name,
+            "commonName" => $common_name,
+            "emailAddress" => $email_address
+        ], $private_key, [
+            "digest_alg" => $digest_alg
+        ]);
+
+        // 导出CSR和私钥
+        openssl_csr_export($csr, $csr_out);
+        openssl_pkey_export($private_key, $private_key_out);
+
+        return [
+            'success' => true,
+            'csr' => $csr_out,
+            'private_key' => $private_key_out
+        ];
+    }
+}
+
+// 示例用法
+$params = [
+    'config' => '{"config":"req","req_extensions":"req_ext","distinguished_name":"dn"}',
+    'digest_alg' => 'SHA256',
+    'private_key_bits' => 2048,
+    'private_key_type' => 'RSA',
+    'common_name' => 'example.com',
+    'country_name' => 'US',
+    'email_address' => 'admin@example.com',
+    'locality_name' => 'San Francisco',
+    'organization_name' => 'Example Inc.',
+    'state_or_province_name' => 'California',
+    'organizational_unit_name' => 'IT'
+];
+
+$result = CSRGenerator::generateCSR($params);
+
+if ($result['success']) {
+    echo "CSR: " . $result['csr'] . "\n";
+    echo "Private Key: " . $result['private_key'] . "\n";
+} else {
+    echo "Error: " . $result['message'] . "\n";
+}
+```
+
+这个脚本使用了PHP的openssl扩展来生成CSR和私钥。你可以根据需要修改参数和配置来生成不同的CSR。

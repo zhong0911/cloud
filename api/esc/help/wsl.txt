@@ -1,0 +1,36 @@
+问题: C:\Users\Administrator>kali
+     Installing, this may take a few minutes...
+     WslRegisterDistribution failed with error: 0x800701bc
+     Error: 0x800701bc WSL 2 ?????????????????? https://aka.ms/wsl2kernel
+
+     Press any key to continue...
+
+
+答案:
+    这个错误提示是因为WSL 2内核未安装或未启用。您可以按照以下步骤解决此问题：
+
+    1. 确保您的Windows 11系统已更新到最新版本。
+
+    2. 打开PowerShell并以管理员身份运行。
+
+    3. 运行以下命令以启用WSL 2：
+
+       dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+       dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+    4. 下载并安装WSL 2内核更新包。您可以从以下链接下载：
+
+       https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+    5. 安装更新包后，重新启动计算机。
+
+    6. 打开PowerShell并以管理员身份运行。
+
+    7. 运行以下命令以将WSL 2设置为默认版本：
+
+       wsl --set-default-version 2
+
+    8. 现在，您可以重新尝试安装Linux发行版，应该不会再出现错误提示了。
+
+    希望这可以帮助您解决问题。

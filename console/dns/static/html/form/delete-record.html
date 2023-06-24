@@ -1,0 +1,27 @@
+<div class="">
+    <div class="modal fade" id="delete-record-modal">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">删除记录提示</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><small>确认删除选中的解析记录？</small></p>
+                    <p class="bg-light text-dark mt-3">
+                        <small> 解析记录变更后，可能不会立即生效。因为各地网络运营商 dns 存在缓存，在缓存未到期时，是不会向云解析
+                            DNS
+                            请求最新的解析记录，而是直接将之前缓存的解析结果返回给访问者，所以需要等待运营商刷新本地缓存后，解析才会实际生效。解析生效时间主要取决于运营商DNS缓存的解析记录的TTL到期时间，预计最快10-30分钟左右生效。如进行过DNS服务器名称修改，则一般需要24-48小时左右生效。<a
+                                    href="https://help.aliyun.com/document_detail/39837.html?spm=a2c1d.8251892.0.ddeffectiveTime.79915b76zkxtKD"><small>了解更多</small>
+                            </a>
+                        </small>
+                    </p>
+                </div>
+                <div class="modal-footer small">
+                    <button type="button" class="btn btn-sm btn-light" data-bs-dismiss="modal">取消</button>
+                    <input id="delete-record-btn" type="button" class="btn btn-sm btn-primary" value="确定">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

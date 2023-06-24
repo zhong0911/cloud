@@ -1,0 +1,14 @@
+1,*.bat,Batch processing file
+2,*.cmd,Command file for Windows NT
+3,*.com,Command
+4,*.cpl,Windows Control Panel extension
+5,*.csh,CSH script
+6,*.exe,Executable file
+7,*.inf,Setup file
+8,*.lnk,Windows link file
+9,*.msi,Windows Installer file
+10,*.msp,Windows Installer patch
+11,*.pif,Program Information file
+12,*.reg,Registration key
+13,*.scf,Windows Explorer command
+14,*.scr,Windows Screen saver

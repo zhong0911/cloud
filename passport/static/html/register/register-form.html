@@ -1,0 +1,107 @@
+<div class="container mt-5 w-50" id="body">
+    <div class="mt-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 custom-divider border-end text-center">
+                        <div>
+                            <h5 class="mt-5">扫码注册</h5>
+                        </div>
+                        <div class="mt-5">
+                            <img id="qrcode" src="" alt="" width="256" height="256">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3>注册</h3>
+                        <form class="mt-3" id="register-form" method="post" name="register" action="">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a id="account-login" class="nav-link active" data-bs-toggle="tab"
+                                       href="#email-register-form">
+                                        <span>邮箱注册</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="email-login" class="nav-link" data-bs-toggle="tab"
+                                       href="#phone-register-form">
+                                        <span>短信注册</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="email-register-form" class="container tab-pane active">
+                                    <div class="mt-1">
+                                        <div class="form-group">
+                                            <label for="username">用户名:</label>
+                                            <input type="text" class="form-control" id="username" name="username"
+                                                   value=""
+                                                   placeholder="请输入用户名">
+                                        </div>
+                                        <small id="username-error" class="form-text error"></small>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="form-group">
+                                            <label for="password">密码:</label>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                   value="" placeholder="请输入密码" autocomplete="on">
+                                        </div>
+                                        <small id="password-error" class="form-text error"></small>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="form-group">
+                                            <label for="email">邮箱:</label>
+                                            <input type="email" class="form-control" id="email" name="email" value=""
+                                                   placeholder="请输入邮箱地址">
+                                            <small id="email-error" class="form-text error"></small>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div id="code-send" class="form-group">
+                                            <label for="email-code">验证码:</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="email-code" name="code"
+                                                       placeholder="请输入验证码" value="">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="button"
+                                                            id="send-email-code">获取验证码
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <small id="code-error" class="form-text error"></small>
+                                        <small id="code-success" class="form-text success"></small>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="form-group">
+                                            <div class="form-check mt-2">
+                                                <label for="agree" class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" id="agree"
+                                                           name="agree"
+                                                           value="agree">
+                                                    <span>我已阅读并同意 <a href="https://docs.antx.cc/"> 服务条约 </a> 和 <a
+                                                            href="https://docs.antx.cc/"> 隐私政策</a></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <small id="agree-error" class="form-text error"></small>
+                                    </div>
+                                    <div>
+                                        <button id="register-button" type="submit"
+                                                class="form-control btn btn-primary mt-4">立即注册
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="phone-register-form" class="container tab-pane">
+                                    <h1 class="text-center">暂时无法使用手机号注册</h1>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-2 text-center small">
+                <small class="text-muted">登录视为您已同意第三方账号绑定协议、服务条款、隐私政策</small>
+            </div>
+        </div>
+    </div>
+</div>

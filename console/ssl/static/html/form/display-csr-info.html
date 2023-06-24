@@ -1,0 +1,38 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="display-csr-info-offcanvas"
+     aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">CSR详情</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="mt-2 small">
+            <small>CSR名称: <span id="csr-name"></span></small><br/>
+            <small>域名: <span id="domain"></span></small><br/>
+            <small>其他域名: <span id="other-domain"></span></small><br/>
+            <small>密钥算法: <span id="private-key-type"></span></small><br/>
+            <small>密钥强度: <span id="private-key-bits"></span></small><br/>
+            <small>创建时间: <span id="generation-time"></span></small>
+        </div>
+        <hr/>
+        <div class="mt-3 small">
+            <small>邮箱: <span id="email-address"></span></small><br/>
+            <small>公司名称: <span id="organization-name"></span></small><br/>
+            <small>部门: <span id="organizational-unit-name"></span></small><br/>
+            <small>详细地址: <span id="country-name"></span>/<span id="state-or-province-name"></span>/<span
+                    id="locality-name"></span></small>
+        </div>
+        <hr/>
+        <div class="mt-3 small">
+            <span><small><a id="display-csr-and-private-key" class="text-decoration-none" href="javascript:void(0)">查看csr内容、私钥内容></a></small></span>
+            <div>
+                <p class="small" id="csr"></p>
+                <p class="small word-wrap" id="private-key"></p>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-footer">
+        <div class="text-end">
+            <input type="button" class="btn btn-sm btn-primary" data-bs-dismiss="offcanvas" value="确定">
+        </div>
+    </div>
+</div>

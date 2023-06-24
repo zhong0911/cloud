@@ -1,0 +1,6 @@
+{
+    "require": {
+        "alibabacloud/domain-20180129": "3.14.8",
+      "ext-json": "*"
+    }
+}

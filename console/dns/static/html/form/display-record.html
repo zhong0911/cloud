@@ -1,0 +1,79 @@
+<div class="modal-wrapper">
+    <div class="modal fade small" id="display-record-modal">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">记录信息</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="display-record-form">
+                        <div class="small">
+                            <label for="type">记录类型</label>
+                            <select id="type" class="form-select form-select-sm">
+                                <option value="A" selected="selected">A</option>
+                                <option value="CHAME">CHAME</option>
+                                <option value="AAAA">AAAA</option>
+                                <option value="NS">NS</option>
+                                <option value="MX">MX</option>
+                                <option value="SRV">SRV</option>
+                                <option value="TXT">TXT</option>
+                                <option value="CAA">CAA</option>
+                                <option value="显性URl">显性URl</option>
+                                <option value="隐性URl">隐性URl</option>
+                            </select>
+                        </div>
+                        <div class="mt-3 small">
+                            <label for="RR">主机记录</label>
+                            <div class="input-group input-group-sm">
+                                <input id="RR" class="form-control form-control-sm" value="">
+                                <span class="domainName input-group-text"></span>
+                            </div>
+                        </div>
+                        <div class="mt-3 small">
+                            <label for="line">解析请求来源</label>
+                            <select id="line" class="form-select form-select-sm">
+                                <option value="default" selected="selected">默认</option>
+                                <option value="unicom">中国联通</option>
+                                <option value="telecom">中国电信</option>
+                                <option value="mobile">中国移动</option>
+                                <option value="edu">中国教育网</option>
+                                <option value="oversea">境外</option>
+                                <option value="baidu">百度</option>
+                                <option value="biying">必应</option>
+                                <option value="google">谷歌</option>
+                                <option value="youdao">有道</option>
+                                <option value="yahoo">雅虎</option>
+                                <option value="aliyun">阿里云</option>
+                                <option value="search">搜索引擎</option>
+                            </select>
+                        </div>
+                        <div class="mt-3 small">
+                            <label for="value">* 记录值</label>
+                            <textarea id="value" cols="30" rows="6" class="form-control "></textarea>
+                        </div>
+                        <div class="mt-3 small" id="mx-priority">
+                            <label for="value">* MX优先级</label>
+                            <label for="priority"></label>
+                            <input id="priority" class="form-control form-control-sm"
+                                   value="10">
+                        </div>
+                        <div class="mt-3 small">
+                            <label for="TTL">* TTL</label>
+                            <select id="TTL" class="form-select form-select-sm">
+                                <option value="600" selected="selected">10 分钟</option>
+                                <option value="1800">30 分钟</option>
+                                <option value="3600">1 小时</option>
+                                <option value="43200">12 小时</option>
+                                <option value="86400">1 天</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer small">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
